@@ -1,51 +1,75 @@
-body {
-    background-color: chartreuse;
-}
-
-:root {
-    --rojo: #28d6c2;
-    --negro: red;
-    --naranja: #f77f00;
-    --crema: #fff4e6;
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--negro);
-    color: var(--crema);
+    background-color: #d62b1f;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--negro);
-    position: sticky;
-    top: 0;
+    padding: 20px 40px;
 }
 
 .logo {
-    color: var(--rojo);
-    font-size: 1.5rem;
+    color: white;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .nav a {
-    color: var(--crema);
+    color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
-    transition: color 0.3s;
+    margin-left: 20px;
 }
 
-.nav a:hover {
-    color: var(--naranja);
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #d62b1f;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu, .nosotros, .contacto {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
 }
