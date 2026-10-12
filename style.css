@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #d62b1f;
+    background-color: #7a1212;
 }
 
 .header {
@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: #7a1212;
 }
 
 .logo {
@@ -29,49 +30,15 @@ body {
     margin-left: 20px;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
 .btn {
     display: inline-block;
-    background-color: white;
-    color: #d62b1f;
+    background-color: #ff8c1a;
+    color: #7a1212;
     padding: 12px 24px;
     margin-top: 20px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.menu, .nosotros, .contacto {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.menu-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.menu-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 220px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
 }
 
 .hero {
@@ -98,6 +65,63 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
     padding: 20px;
+    color: white;
+}
+
+.menu, .nosotros, .contacto {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu h2 {
+    color: #ff8c1a;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.menu-card {
+    background-color: #fdf1dc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 240px;
+    text-align: left;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card h3 {
+    color: #7a1212;
+    font-size: 18px;
+    padding: 12px 14px 0;
+}
+
+.menu-card p {
+    color: #333;
+    font-size: 14px;
+    padding: 6px 14px 16px;
+}
+
+.nosotros, .contacto {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
