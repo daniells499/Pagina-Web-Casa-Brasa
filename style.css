@@ -45,7 +45,11 @@ body {
     position: relative;
     text-align: center;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; 
+    background-image: url('img/Hambuguesa-Hero.jpeg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 .hero-img {
