@@ -205,3 +205,41 @@ body {
 .hero-content .btn {
     animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
+
+
+.nosotros-logo {
+    width: 160px;
+    margin-bottom: 24px;
+}
+
+.carta {
+    background-color: #111111;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.carta > p {
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.carta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carta-grid img {
+    width: 280px;
+    border-radius: 14px;
+    border: 2px solid #ff8c1a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s;
+}
+
+.carta-grid img:hover {
+    transform: scale(1.03);
+}
