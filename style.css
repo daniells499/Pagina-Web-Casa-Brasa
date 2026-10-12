@@ -2,137 +2,186 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #7a1212;
+    background-color: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #7a1212;
+    padding: 20px 50px;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #262626;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
     color: white;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-decoration: none;
 }
 
+.nav {
+    display: flex;
+    gap: 36px;
+}
+
 .nav a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
-    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #ff8c1a;
 }
 
 .btn {
     display: inline-block;
     background-color: #ff8c1a;
-    color: #7a1212;
-    padding: 12px 24px;
-    margin-top: 20px;
+    color: #0d0d0d;
+    padding: 14px 32px;
     border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 140, 26, 0.35);
 }
 
 .hero {
     position: relative;
-    text-align: center;
-    padding: 0;
-    overflow: hidden; 
-    background-image: url('img/Hambuguesa-Hero.jpeg');
+    height: 560px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75)), url('img/Hambuguesa-Hero.jpeg');
     background-size: cover;
     background-position: center;
-
-}
-
-.hero-img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 20px;
+    text-align: center;
     color: white;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #d9d9d9;
+    margin-bottom: 28px;
 }
 
 .menu, .nosotros, .contacto {
     text-align: center;
-    padding: 60px 20px;
+    padding: 90px 20px;
 }
 
-.menu h2 {
-    color: #ff8c1a;
-    font-size: 32px;
-    margin-bottom: 30px;
+.menu h2, .nosotros h2, .contacto h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.menu > p {
+    color: #999;
+    margin-bottom: 40px;
 }
 
 .menu-grid {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 28px;
     flex-wrap: wrap;
-    margin-top: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .menu-card {
-    background-color: #fdf1dc;
-    border-radius: 10px;
+    background-color: #161616;
+    border: 1px solid #262626;
+    border-radius: 12px;
     overflow: hidden;
-    width: 240px;
+    width: 260px;
     text-align: left;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff8c1a;
 }
 
 .menu-card img {
     width: 100%;
-    height: 160px;
+    height: 180px;
     object-fit: cover;
     display: block;
 }
 
 .menu-card h3 {
-    color: #7a1212;
+    color: white;
     font-size: 18px;
-    padding: 12px 14px 0;
+    font-weight: 700;
+    padding: 16px 16px 0;
 }
 
 .menu-card p {
-    color: #333;
+    color: #999;
     font-size: 14px;
-    padding: 6px 14px 16px;
+    line-height: 1.5;
+    padding: 8px 16px 20px;
 }
 
-.nosotros, .contacto {
-    color: white;
+.nosotros {
+    background-color: #111111;
+}
+
+.nosotros p {
+    color: #bbb;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.contacto p {
+    color: #bbb;
+    margin-bottom: 28px;
+    font-size: 16px;
 }
 
 .footer {
     text-align: center;
-    padding: 20px;
-    color: white;
+    padding: 28px;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #262626;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 
 @keyframes fadeInUp {
     from {
